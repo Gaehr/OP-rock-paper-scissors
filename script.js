@@ -1,3 +1,6 @@
+
+let playerChoice = prompt('Game Start! Choose your attack, Rock, Paper or Scissors?')
+
 function computerPlay(computerChoose)
 {
   
