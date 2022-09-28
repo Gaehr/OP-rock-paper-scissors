@@ -34,60 +34,64 @@ let computerSelection = computerPlay(computerChoose)
 
 function playRound(playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "Paper"){
-        alert('You loose! Paper beats rock!');
+       return 'You loose! Paper beats rock!';
+       
 
     }
     
     else if(playerSelection == "rock" && computerSelection == "Rock"){
-        alert('You draw!');
+        return'You draw!';
+         
     }
 
     else if(playerSelection == "rock" && computerSelection == "Scissors"){
-        alert('You win! Rock beats Scissors!');
+        return 'You win! Rock beats Scissors!';
+        
         
     }
 
     else if(playerSelection == "paper" && computerSelection == "Scissors"){
-        alert('You loose! Scissors beat Paper!');
-        
+        return'You loose! Scissors beat Paper!';
+         
     }
 
     else if(playerSelection == "paper" && computerSelection == "Paper"){
-        alert('You draw!');
-      
+        return'You draw!';
+         
     }
 
      else if(playerSelection == "paper" && computerSelection == "Rock"){
-        alert('You win! Paper beats Rock!');
-        
+        return'You win! Paper beats Rock!';
+         
     }
 
     else if(playerSelection == "scissors" && computerSelection == "Rock"){
-        alert('You loose! Rock beats Scissors!');
-       
+        return'You loose! Rock beats Scissors!';
+         
     }
 
     else if(playerSelection == "scissors" && computerSelection == "Paper"){
-        alert('You win! Scissors beat Paper!');
-        
+        return'You win! Scissors beat Paper!';
+         
     }
 
     else if(playerSelection == "scissors" && computerSelection == "Scissors"){
-        alert('You draw!');
-        
+        return'You draw!';
+         
     }
 
     else {
-        alert('There seems to be a problem, please pick between Rock, Paper and Scissors!')
-     
+        return'There seems to be a problem, please pick between Rock, Paper and Scissors!';
+         
     }
 
 
 }
 
-console.log(playRound(playerSelection, computerSelection))
+window.alert(playRound(playerSelection, computerSelection))
 
-/* game now works, only Problem is returning the result 
+
+/* game now works, only Problem is returning the result still not functional
 
 /* tried game = playRound, but it returns playRound(playerSelection, computerSelection) 
 instead of the wanted result, maybe alert is wrong,
